@@ -37,13 +37,13 @@ body {
     margin:0;
     padding: 0px;
   }
-  li, h3 {
+  li, .todo-title {
     list-style:none;
   }
-  input,button{
+  input, .button{
     outline:none;
   }
-  button {
+  .button {
     background: none;
     border: 0px;
     color: #888;
@@ -52,11 +52,11 @@ body {
     font-family: Lato, sans-serif;
     cursor: pointer;
   }
-  button:hover {
+  .button:hover {
     color: #3a3a3a;
   }
   /* Heading */
-  h3,
+  .todo-title,
   label[for="new-task"] {
     color: #333;
     font-weight: 700;
@@ -87,10 +87,10 @@ body {
     display: block;
     margin: 0 0 20px;
   }
-  input#new-task {
+  #new-task {
     width: 318px;
   }
-  p > button:hover {
+  p > .button:hover {
     color: #0fc57c;
   }
   
@@ -120,20 +120,20 @@ body {
   li >    input[type="text"] {
     width: 226px
   }
-  li > button.delete:hover {
+  li > .button.delete:hover {
     color: #cf2323;
   }
-  button.delete img {
+  .button.delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
   }
-  button.delete img:hover {
+  .button.delete img:hover {
     transform: rotateZ(0);
   }
   
   /* Completed */
-  ul#completed-tasks label {
+  #completed-tasks label {
     text-decoration: line-through
     color: #888;
   }
@@ -143,11 +143,11 @@ body {
     display:none
   }
   
-  ul li.edit-mode input[type="text"] {
+  ul .edit-mode input[type="text"] {
     display:inline-block;
     width:224px
   }
   
-  ul li.edit-mode label {
+  ul .edit-mode label {
     display:none;
   }
