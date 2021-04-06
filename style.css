@@ -20,7 +20,8 @@ body {
   }
   
   @media (max-width: 768px) {
-    .header-img { text-align: center;
+    .header-img {
+      text-align: center;
     }
   }
 
@@ -45,11 +46,13 @@ body {
     padding: 0px;
   }
 
-  li, .todo-title {
+  li,
+  .todo-title {
     list-style: none;
   }
 
-  input, .button{
+  input,
+  .button{
     outline: none;
   }
 
