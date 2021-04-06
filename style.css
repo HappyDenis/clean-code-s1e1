@@ -4,7 +4,7 @@
     font-family: Lato, sans-serif;
   }
 
-  .header-img {
+  .header__img {
     width: 500px;
     margin: 0 auto;
     display: block;
@@ -134,10 +134,10 @@
   }
 
   .task-list__checkbox {
-    vertical-align: middle;
+  /*  vertical-align: middle;
   }
   
-  li > input[type="checkbox"] {
+  li > input[type="checkbox"] {*/
     margin: 0 10px;
   }
 
@@ -167,6 +167,10 @@
   }
   
   /* Completed */
+  .task-list_complete .task-list__item {
+    padding-top: 16px;
+  }
+  
   .task-list_complete .task-list__name_label {
     text-decoration: line-through;
     color: #888;
@@ -184,4 +188,8 @@
   
   .edit-mode .task-list__name_label {
     display: none;
+  }
+
+  .task-list_incomplete {
+    padding-bottom: 4px;
   }
